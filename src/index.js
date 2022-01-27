@@ -5,16 +5,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import App from './App';
 import store from './app/store';
+import 'antd/dist/antd.min.css' ;
 
-import 'antd/dist/antd.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Router>
       <Provider store={store}>
         <App />
       </Provider>
     </Router>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root'),
 );
